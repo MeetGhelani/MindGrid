@@ -1,79 +1,100 @@
-<<<<<<< HEAD
 # MindGrid
-=======
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MindGrid is a compact puzzle game built with React, TypeScript, and Vite. Each level is a logic board where movement is limited, gravity can be rewritten, and one bad sequence can lock the puzzle.
 
-Currently, two official plugins are available:
+## What The Game Includes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 15 handcrafted puzzle levels
+- Gravity-flip mechanics powered by rule points
+- Interactive board elements like doors, switches, traps, teleporters, and one-way tiles
+- Keyboard controls (`WASD` / arrow keys) plus swipe support on touch devices
+- First-run "How To Play" tutorial modal
+- Progressive level unlocking with instant in-game feedback
 
-## React Compiler
+## Gameplay Loop
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+1. Read the board and locate the goal.
+2. Move carefully within the level's move limit.
+3. Spend rule points to flip gravity when the route requires it.
+4. Avoid traps and dead ends.
+5. Clear the puzzle to unlock the next level.
 
-Note: This will impact Vite dev & build performances.
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React 19
+- TypeScript
+- Vite
+- Zustand-style external store pattern for game state
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open the local Vite URL in your browser to play.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Available Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
+npm run build
+npm run preview
+npm run lint
 ```
->>>>>>> 7129913 (initial commit)
+
+## Project Structure
+
+```text
+src/
+  components/      UI building blocks
+  game/            level data and rule logic
+  store/           central game state
+  types/           shared TypeScript models
+public/            static assets
+```
+
+## Screenshots
+
+Add your screenshots in:
+
+```text
+docs/screenshots/
+```
+
+Recommended filenames:
+
+- `docs/screenshots/gameplay-desktop.png`
+- `docs/screenshots/gameplay-mobile.png`
+- `docs/screenshots/how-to-play.png`
+
+After you add them, paste this into the README wherever you want the gallery to appear:
+
+```md
+## Screenshots
+
+![MindGrid gameplay on desktop](docs/screenshots/gameplay-desktop.png)
+![MindGrid gameplay on mobile](docs/screenshots/gameplay-mobile.png)
+![MindGrid how to play modal](docs/screenshots/how-to-play.png)
+```
+
+If you want a cleaner GitHub layout, use this instead:
+
+```html
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/gameplay-desktop.png" alt="MindGrid desktop gameplay" width="70%" />
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/gameplay-mobile.png" alt="MindGrid mobile gameplay" width="30%" />
+  <img src="docs/screenshots/how-to-play.png" alt="MindGrid how to play modal" width="30%" />
+</p>
+```
+
+
+## Status
+
+MindGrid is currently set up as a polished single-page puzzle experience with progression, responsive controls, and a custom game-state system.
