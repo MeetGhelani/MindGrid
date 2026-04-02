@@ -57,10 +57,13 @@ public/            static assets
 
 ## Screenshots
 MindGrid desktop gameplay
+<img width="1600" height="948" alt="gameplay-desktop" src="https://github.com/user-attachments/assets/009a2d36-4ad6-4274-89ec-056ecb41eae3" />
 
 MindGrid mobile gameplay
+<img width="395" height="839" alt="gameplay-mobile" src="https://github.com/user-attachments/assets/9cb1ec91-3754-47d1-840f-f18b6eb60b6b" />
 
 MindGrid how to play modal
+<img width="773" height="559" alt="how-to-play" src="https://github.com/user-attachments/assets/52838db9-4f6e-4445-adaf-1a11e53b43cf" />
 
 
 
