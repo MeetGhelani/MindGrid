@@ -56,43 +56,12 @@ public/            static assets
 ```
 
 ## Screenshots
+MindGrid desktop gameplay
 
-Add your screenshots in:
+MindGrid mobile gameplay
 
-```text
-docs/screenshots/
-```
+MindGrid how to play modal
 
-Recommended filenames:
-
-- `docs/screenshots/gameplay-desktop.png`
-- `docs/screenshots/gameplay-mobile.png`
-- `docs/screenshots/how-to-play.png`
-
-After you add them, paste this into the README wherever you want the gallery to appear:
-
-```md
-## Screenshots
-
-![MindGrid gameplay on desktop](docs/screenshots/gameplay-desktop.png)
-![MindGrid gameplay on mobile](docs/screenshots/gameplay-mobile.png)
-![MindGrid how to play modal](docs/screenshots/how-to-play.png)
-```
-
-If you want a cleaner GitHub layout, use this instead:
-
-```html
-## Screenshots
-
-<p align="center">
-  <img src="docs/screenshots/gameplay-desktop.png" alt="MindGrid desktop gameplay" width="70%" />
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/gameplay-mobile.png" alt="MindGrid mobile gameplay" width="30%" />
-  <img src="docs/screenshots/how-to-play.png" alt="MindGrid how to play modal" width="30%" />
-</p>
-```
 
 
 ## Status
